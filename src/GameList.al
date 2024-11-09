@@ -1,6 +1,6 @@
 namespace DefaultPublisher.BCGames;
 
-page 50101 GameList
+page 50102 GameList
 {
     PageType = List;
     ApplicationArea = All;
@@ -13,9 +13,9 @@ page 50101 GameList
         {
             group(GroupName)
             {
-                field(Name; rec.GameName)
+                field("Game Name"; Rec.GameName)
                 {
-
+                    ApplicationArea = All;
                 }
             }
         }

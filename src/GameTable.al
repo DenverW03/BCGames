@@ -12,7 +12,7 @@ table 50100 GameTable
 
         }
 
-        field(2; GameName; Code[20])
+        field(2; GameName; Text[50])
         {
             DataClassification = ToBeClassified;
 
