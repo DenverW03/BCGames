@@ -46,7 +46,7 @@ page 50203 GameCard
                 Promoted = true;
                 trigger OnAction()
                 begin
-                    CurrPage."Falling Sand".Init();
+                    CurrPage."Falling Sand".init();
                 end;
             }
         }
