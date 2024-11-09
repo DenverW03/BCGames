@@ -1,6 +1,6 @@
 namespace DefaultPublisher.BCGames;
 
-table 50100 GameTable
+table 50200 GameTable
 {
     DataClassification = ToBeClassified;
 

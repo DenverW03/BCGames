@@ -1,17 +1,17 @@
 namespace DefaultPublisher.BCGames;
 
-page 50102 GameList
+page 50202 GameList
 {
     PageType = List;
     ApplicationArea = All;
-    UsageCategory = Administration;
+    UsageCategory = Lists;
     SourceTable = GameTable;
 
     layout
     {
         area(Content)
         {
-            group(GroupName)
+            repeater(Games)
             {
                 field("Game Name"; Rec.GameName)
                 {
@@ -20,22 +20,4 @@ page 50102 GameList
             }
         }
     }
-
-    actions
-    {
-        area(Processing)
-        {
-            action(ActionName)
-            {
-
-                trigger OnAction()
-                begin
-
-                end;
-            }
-        }
-    }
-
-    var
-        myInt: Integer;
 }

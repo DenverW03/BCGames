@@ -1,6 +1,6 @@
 namespace DefaultPublisher.BCGames;
 
-codeunit 50101 Setup
+codeunit 50201 Setup
 {
     Subtype = Install;
 
@@ -16,6 +16,7 @@ codeunit 50101 Setup
     procedure InsertAllGames()
     begin
         InsertSingleGame('SAND', 'Falling Sand Simulation');
+        InsertSingleGame('MINE', 'MineSweeper')
     end;
 
     procedure InsertSingleGame(ID: Code[20]; Name: Text[50])
