@@ -1,6 +1,6 @@
 namespace DefaultPublisher.BCGames;
 
-controladdin "FallingSand"
+controladdin FallingSand
 {
     StartupScript = './src/sand/Startup.js';
     StyleSheets = './src/sand/Stylesheet.css';
