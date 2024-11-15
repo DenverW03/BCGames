@@ -25,7 +25,7 @@ page 50203 GameCard
 
                 //}
             }
-            usercontrol("Falling Sand"; FallingSand)
+            usercontrol("Game Setup"; GameSetup)
             {
                 ApplicationArea = All;
             }
@@ -72,7 +72,7 @@ page 50203 GameCard
                 Promoted = true;
                 trigger OnAction()
                 begin
-                    CurrPage."Falling Sand".init();
+                    CurrPage."Game Setup".init();
                 end;
             }
         }

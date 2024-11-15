@@ -1,6 +1,6 @@
 namespace DefaultPublisher.BCGames;
 
-controladdin FallingSand
+controladdin GameSetup
 {
     StartupScript = './src/sand/Startup.js';
     StyleSheets = './src/sand/Stylesheet.css';
@@ -16,4 +16,7 @@ controladdin FallingSand
     VerticalShrink = false;
 
     procedure init();
+
+    // This procedure calls in the Startup.js file, passing a text parameter representing the game name
+    procedure chooseGame(s: text);
 }
