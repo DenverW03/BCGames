@@ -7,13 +7,13 @@ controladdin FallingSand
     Scripts = './src/sand/JS.js';
 
     HorizontalStretch = true;
-    HorizontalShrink = true;
+    HorizontalShrink = false;
     MinimumHeight = 500;
     MaximumHeight = 500;
     MinimumWidth = 500;
     MaximumWidth = 500;
     VerticalStretch = true;
-    VerticalShrink = true;
+    VerticalShrink = false;
 
     procedure init();
 }

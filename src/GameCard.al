@@ -7,13 +7,39 @@ page 50203 GameCard
     ApplicationArea = All;
     UsageCategory = Administration;
 
+    SourceTable = GameTable;
+
     layout
     {
         area(Content)
         {
+            group(Info)
+            {
+                field(GameID; Rec.GameID)
+                {
+
+                }
+
+                //field(GameName; Rec.GameName)
+                //{
+
+                //}
+            }
             usercontrol("Falling Sand"; FallingSand)
             {
                 ApplicationArea = All;
+            }
+            group(Info2)
+            {
+                //field(GameID; Rec.GameID)
+                //{
+
+                //}
+
+                field(GameName; Rec.GameName)
+                {
+
+                }
             }
         }
     }
