@@ -21,11 +21,6 @@ page 50203 GameCard
                 {
 
                 }
-
-                //field(GameName; Rec.GameName)
-                //{
-
-                //}
             }
 
             usercontrol("Game Setup"; GameSetup)
@@ -35,11 +30,6 @@ page 50203 GameCard
 
             group(Info2)
             {
-                //field(GameID; Rec.GameID)
-                //{
-
-                //}
-
                 field(GameName; Rec.GameName)
                 {
 

@@ -1,1 +1,23 @@
-// Actually only used as a placeholder to allow for the JS.js script to decide the JS file used
+var controlAddIn = document.getElementById('controlAddIn');
+var canvas = document.createElement("CANVAS");
+var mouseX;
+var mouseY;
+
+canvas.width = 500;
+canvas.height = 500;
+canvas.id = "canvas";
+
+document.body.appendChild(canvas);
+document.addEventListener("mousemove", mouseMoveHandler, false);
+document.addEventListener("click", mouseClickHandler);
+
+controlAddIn.appendChild(canvas);
+
+function mouseClickHandler(e) {
+    console.log("x: " + mouseX, "y: " + mouseY);
+}
+
+function mouseMoveHandler(e) {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+}
