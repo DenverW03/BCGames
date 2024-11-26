@@ -17,10 +17,6 @@ class FallingSand {
 
         // Stroke rect outline
         ctx.strokeRect(50, 50, 150, 100);
-
-        // Create filled text
-        ctx.font = "50px serif";
-        ctx.fillText("Rect!", 70, 110);
     }
 
     hello() {
