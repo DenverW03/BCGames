@@ -4,6 +4,8 @@ table 50200 GameTable
 {
     DataClassification = ToBeClassified;
 
+    DataCaptionFields = GameName;
+
     fields
     {
         field(1; GameID; Code[20])

@@ -9,6 +9,8 @@ page 50203 GameCard
 
     SourceTable = GameTable;
 
+    Caption = 'Game Card';
+
     layout
     {
         area(Content)
@@ -74,8 +76,7 @@ page 50203 GameCard
                 Promoted = true;
                 trigger OnAction()
                 begin
-                    CurrPage."Game Setup".chooseGame('Hello there');
-                    CurrPage."Game Setup".test(5);
+                    CurrPage."Game Setup".chooseGame(Format(Rec.GameName));
                 end;
             }
         }
