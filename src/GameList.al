@@ -6,6 +6,7 @@ page 50202 GameList
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = GameTable;
+    CardPageId = GameCard;
 
     layout
     {

@@ -1,31 +1,27 @@
-var controlAddIn = document.getElementById('controlAddIn');
-var canvas = document.createElement("CANVAS");
-canvas.width = 500;
-canvas.height = 500;
-canvas.id = "canvas";
-document.body.appendChild(canvas);
+class MineSweeper {
+    constructor() {
+        var controlAddIn = document.getElementById('controlAddIn');
+        var canvas = document.createElement("CANVAS");
+        var mouseX;
+        var mouseY;
 
-var mouseX;
-var mouseY;
+        canvas.width = 500;
+        canvas.height = 500;
+        canvas.id = "canvas";
 
+        document.body.appendChild(canvas);
+        document.addEventListener("mousemove", mouseMoveHandler, false);
+        document.addEventListener("click", mouseClickHandler);
 
-document.addEventListener("mousemove", mouseMoveHandler, false);
-document.addEventListener("click", mouseClickHandler);
+        controlAddIn.appendChild(canvas);
+    }
 
-function mouseClickHandler(e) {
-    console.log("x: " + mouseX, "y: " + mouseY);
-}
+    mouseClickHandler(e) {
+        console.log("x: " + mouseX, "y: " + mouseY);
+    }
 
-// Handler updates the global var mouse coords
-function mouseMoveHandler(e) {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-}
-
-
-
-var canvas = controlAddIn.appendChild(canvas);
-
-function init() {
-    alert('HELLO WORLD!');
+    mouseMoveHandler(e) {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+    }
 }

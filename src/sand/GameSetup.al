@@ -4,7 +4,7 @@ controladdin GameSetup
 {
     StartupScript = './src/sand/Startup.js';
     StyleSheets = './src/sand/Stylesheet.css';
-    Scripts = './src/sand/JS.js';
+    Scripts = './src/sand/JS.js', './src/sand/MineSweeper.js';
 
     HorizontalStretch = true;
     HorizontalShrink = false;
@@ -14,8 +14,6 @@ controladdin GameSetup
     MaximumWidth = 500;
     VerticalStretch = true;
     VerticalShrink = false;
-
-    procedure init();
 
     // This procedure calls in the Startup.js file, passing a text parameter representing the game name
     procedure chooseGame(s: text);

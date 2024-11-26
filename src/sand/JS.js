@@ -1,10 +1,5 @@
-function chooseGame(s) {
-    console.log("Text parameter: " + s);
-}
+function chooseGame(gameName) {
+    console.log("Game start!");
 
-function test(i) {
-    if(i == 5) {
-        console.log("Number equals 5");
-    }
+    const mineSweeper = new MineSweeper();
 }
-

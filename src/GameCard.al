@@ -25,10 +25,12 @@ page 50203 GameCard
 
                 //}
             }
+
             usercontrol("Game Setup"; GameSetup)
             {
                 ApplicationArea = All;
             }
+
             group(Info2)
             {
                 //field(GameID; Rec.GameID)
@@ -48,7 +50,7 @@ page 50203 GameCard
     {
         area(Processing)
         {
-            action(Refresh)
+            action("Refresh Client Instance")
             {
                 ApplicationArea = All;
                 Image = Refresh;
@@ -65,7 +67,7 @@ page 50203 GameCard
                 end;
             }
 
-            action(init)
+            action("Restart Game")
             {
                 ApplicationArea = All;
                 Image = Refresh;
