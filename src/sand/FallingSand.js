@@ -7,9 +7,6 @@ class FallingSand {
     }
 
     changeBackgroundColor() {
-        // Should probably edit the CSS variable
-        //controlAddIn.style.backgroundColor = "orange";
-
         var root = document.querySelector(':root');
         root.style.setProperty('--bg-color', 'orange');
     }
