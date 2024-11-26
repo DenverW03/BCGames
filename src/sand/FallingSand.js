@@ -1,14 +1,10 @@
 class FallingSand {
     constructor() {
         console.log("class constructor called");
-        this.changeBackgroundColor();
         //this.drawRect();
-
-    }
-
-    changeBackgroundColor() {
         var root = document.querySelector(':root');
         root.style.setProperty('--bg-color', 'orange');
+
     }
 
     drawRect() {
