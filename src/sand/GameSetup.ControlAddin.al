@@ -4,7 +4,7 @@ controladdin GameSetup
 {
     StartupScript = './src/sand/Startup.js';
     StyleSheets = './src/sand/Stylesheet.css';
-    Scripts = './src/sand/JS.js', './src/sand/MineSweeper.js';
+    Scripts = './src/sand/JS.js', './src/sand/MineSweeper.js', './src/sand/FallingSand.js';
 
     HorizontalStretch = true;
     HorizontalShrink = false;
