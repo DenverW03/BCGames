@@ -1,0 +1,1 @@
+// Actually only used as a placeholder to allow for the JS.js script to decide the JS file used

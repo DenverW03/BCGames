@@ -19,4 +19,6 @@ controladdin GameSetup
 
     // This procedure calls in the Startup.js file, passing a text parameter representing the game name
     procedure chooseGame(s: text);
+
+    procedure test(i: integer);
 }

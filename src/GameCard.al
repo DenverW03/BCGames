@@ -72,7 +72,8 @@ page 50203 GameCard
                 Promoted = true;
                 trigger OnAction()
                 begin
-                    CurrPage."Game Setup".init();
+                    CurrPage."Game Setup".chooseGame('Hello there');
+                    CurrPage."Game Setup".test(5);
                 end;
             }
         }
