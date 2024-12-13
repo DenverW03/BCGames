@@ -6,7 +6,7 @@ codeunit 50201 Setup
 
     trigger OnInstallAppPerCompany()
     var
-        Game: Record GameTable;
+        Game: Record Games;
     begin
         if Game.IsEmpty then begin
             InsertAllGames();
